@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Login from '../components/Login'
 import { useSession, signIn } from 'next-auth/react'
-export default function Home({}) {
+export default function Home({ exploreData, cardsData }) {
   const { data: session } = useSession()
   return (
     <div>
