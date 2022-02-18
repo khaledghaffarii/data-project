@@ -118,7 +118,7 @@ function Header() {
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
-  console.log(session?.user)
+  console.log(HTMLImageElement.src)
   return (
     <header className="sticky top-0 z-50">
       <div className="flex-grow items-center bg-amazon_blue p-1 py-2 lg:flex">
@@ -162,18 +162,22 @@ function Header() {
 
               <Menu as="div" className="relative inline-block text-left ">
                 <div>
-                  <Menu.Button className="">
-                    {/* <UserCircleIcon
-                      className="h-8 w-8 cursor-pointer lg:w-full"
-                      aria-hidden="true"
-                    /> */}
-
-                    <img
-                      className="m-1 w-12 cursor-pointer rounded-full hover:scale-125 lg:m-0 lg:h-14  lg:w-full"
-                      alt=" profile pic"
-                      src={session?.user?.image}
-                    />
-                  </Menu.Button>
+                  {!session?.user?.image ? (
+                    <Menu.Button className="rounded-full border-2 p-2 text-yellow-500">
+                      <UserCircleIcon
+                        className="h-8 w-8 cursor-pointer lg:w-full"
+                        aria-hidden="true"
+                      />
+                    </Menu.Button>
+                  ) : (
+                    <Menu.Button className="">
+                      <img
+                        className="m-1 w-12 cursor-pointer rounded-full hover:scale-125 lg:m-0 lg:h-14  lg:w-full"
+                        alt=" profile pic"
+                        src={session?.user?.image}
+                      />
+                    </Menu.Button>
+                  )}
                 </div>
 
                 <Transition
