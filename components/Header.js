@@ -36,16 +36,14 @@ function Header() {
           <SearchIcon className="h-12 p-4" />
         </div>
         {/* select */} {/* Right */}
-        <div class="flex justify-between">
-          <div class=" mb-3   lg:ml-10">
-            <div class="justify-content mt-3  py-0 lg:flex lg:w-full">
+        <div className="flex justify-between">
+          <div className=" mb-3   lg:ml-10">
+            <div className="justify-content mt-3  py-0 lg:flex lg:w-full">
               <select
-                class="form-select m-0 block w-64 rounded-md border  border-solid border-gray-300 bg-white bg-clip-padding px-3  py-2 text-base font-normal text-gray-800 transition ease-in-out focus:border-blue-600 focus:bg-white  focus:text-gray-900  focus:outline-none lg:w-72 "
+                className="form-select m-0 block w-64 rounded-md border  border-solid border-gray-300 bg-white bg-clip-padding px-3  py-2 text-base font-normal text-gray-800 transition ease-in-out focus:border-blue-600 focus:bg-white  focus:text-gray-900  focus:outline-none lg:w-72 "
                 aria-label="Default select example"
               >
-                <option defaultValue="0" selected>
-                  Facebook_UID
-                </option>
+                <option value="0">Facebook_UID</option>
                 <option value="1">First_Name_FB</option>
               </select>
             </div>
