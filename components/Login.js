@@ -1,13 +1,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { signIn } from 'next-auth/react'
-import {
-  //MenuIcon,
-  SearchIcon,
-  ShoppingCartIcon,
-} from '@heroicons/react/outline'
+import { SearchIcon, ShoppingCartIcon } from '@heroicons/react/outline'
 function Login() {
-  const [sidebar, setsidebar] = useState()
   const [loginShow, setLoginShow] = useState(false)
 
   function LoginFunction() {
