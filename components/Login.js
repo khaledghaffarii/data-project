@@ -78,11 +78,11 @@ function Login() {
                   <hr className="w-full bg-gray-400  " />
                 </div>
                 <div>
-                  <lable className="text-sm font-medium leading-none text-gray-100">
+                  <label className="text-sm font-medium leading-none text-gray-100">
                     Email
-                  </lable>
+                  </label>
                   <input
-                    aria-label="enter email adress"
+                    aria-label="enter email address"
                     placeholder="Email"
                     role="input"
                     type="email"
@@ -90,9 +90,9 @@ function Login() {
                   />
                 </div>
                 <div className="mt-6  w-full">
-                  <lable className="text-sm font-medium leading-none text-gray-100">
+                  <label className="text-sm font-medium leading-none text-gray-100">
                     Password
-                  </lable>
+                  </label>
                   <div className="relative flex items-center justify-center">
                     <input
                       aria-label="enter Password"
