@@ -9,13 +9,13 @@ function Login() {
     return setLoginShow(true)
   }
   return (
-    <div className=" relative bg-black">
+    <div className="   bg-black">
       <h1>I am the login screen</h1>
       <div className="absolute z-50 mt-36 flex h-4/6 w-full flex-col items-center justify-center space-y-4">
         {loginShow ? (
-          <div className=" w-full">
-            <div className="flex flex-col items-center lg:mr-8 lg:ml-96 lg:w-2/3">
-              <div className="mt-16 w-full rounded   p-10 shadow md:w-1/2 lg:w-1/3">
+          <div className=" mb-24 md:w-1/2 lg:mb-0 lg:w-full">
+            <div className="flex  flex-col items-center justify-center ">
+              <div className=" w-full  rounded  shadow lg:w-96">
                 <button
                   onClick={() => setLoginShow(false)}
                   className="text-gray-500"
@@ -144,7 +144,7 @@ function Login() {
         ) : (
           <button
             onClick={LoginFunction}
-            className="w-80 animate-pulse rounded-lg bg-yellow-500 p-5 font-bold"
+            className="w-60  animate-pulse rounded-lg bg-yellow-500 p-5 font-bold lg:w-80"
           >
             Login
           </button>

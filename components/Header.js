@@ -18,7 +18,7 @@ function Header() {
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
-  console.log(HTMLImageElement.src)
+  console.log(session.user['image'])
   return (
     <header className="sticky top-0 z-50">
       <div className="flex-grow items-center bg-amazon_blue p-1 py-2 lg:flex">
@@ -65,7 +65,7 @@ function Header() {
                       <img
                         className="m-1 w-12 cursor-pointer rounded-full hover:scale-125 lg:m-0 lg:h-14  lg:w-full"
                         alt=" profile pic"
-                        src={session?.user?.image}
+                        src={session.user['image']}
                       />
                     </Menu.Button>
                   )}
