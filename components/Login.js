@@ -9,7 +9,7 @@ function Login() {
     return setLoginShow(true)
   }
   return (
-    <div className="   bg-black">
+    <div className="bg-black">
       <h1>I am the login screen</h1>
       <div className="absolute z-50 mt-36 flex h-4/6 w-full flex-col items-center justify-center space-y-4">
         {loginShow ? (

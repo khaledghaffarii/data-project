@@ -12,7 +12,7 @@ import { useRouter } from 'next/router'
 
 import { Fragment } from 'react'
 import { useSession, signOut } from 'next-auth/react'
-import Image from 'next/image'
+
 function Header() {
   const { data: session } = useSession()
   function classNames(...classes) {
