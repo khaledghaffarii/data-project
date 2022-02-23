@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/core": "^7.17.5",
     "@babel/eslint-parser": "^7.17.0",
     "@headlessui/react": "^1.4.3",
     "@heroicons/react": "^1.0.5",
