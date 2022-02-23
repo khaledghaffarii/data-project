@@ -14,5 +14,15 @@
   "parserOptions": {
     "sourceType": "module"
   },
-  "rules": { "no-unused-vars": 2, "no-undef": 2 }
+  "rules": {
+    "no-undef": 2,
+    "indent": ["off", 4],
+    "linebreak-style": ["warn", "unix"],
+    "no-console": "off",
+    "no-mixed-spaces-and-tabs": "warn",
+    "no-unused-vars": "off",
+    "react/prop-types": ["warn", { "skipUndeclared": true }],
+    "quotes": ["off", "single"],
+    "semi": ["off", "always"]
+  }
 }
